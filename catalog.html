@@ -49,17 +49,17 @@
         <div>
             <form action="#" method="get">
                 <span>Фильтр:</span>
-                <div>
-                    <h3>Цена:</h3>
+                <fieldset>
+                    <legend>Цена:</legend>
                     <div>
-                        <input type="range" min="0" max="30000" value="10000">
+                    <label><input type="range" min="0" max="30000" value="10000">Шкала цен</label>
                     </div>
                     <div>
-                       <input type="number" min="0" max="30000" value="0">
+                       <label><input type="number" min="0" max="30000" value="0">Цена от</label>
                        <span>-</span>
-                       <input type="number" min="0" max="30000" value="0">
+                       <label><input type="number" min="0" max="30000" value="0">Цена до</label>
                     </div>
-                </div>
+                </fieldset>
                 <fieldset>
                     <legend>ПРОИЗВОДИТЕЛИ:</legend>
                     <label><input type="checkbox" name="producer" value="bosch" checked>BOSCH</label>
@@ -78,11 +78,13 @@
         </div>
         <div>
             <span>Сортировка:</span>
-            <a href="blank.html">По цене</a>
-            <a href="blank.html">По типу</a>
-            <a href="blank.html">По функционалу</a>
-            <a href="blank.html">Мин</a>
-            <a href="blank.html">Макс</a>
+            <ul>
+                <li><a href="blank.html">По цене</a></li>
+                <li><a href="blank.html">По типу</a></li>
+                <li><a href="blank.html">По функционалу</a></li>
+                <li><a href="blank.html">Мин</a></li>
+                <li><a href="blank.html">Макс</a></li>
+            </ul>
         </div>
         <div>
             <ul>
