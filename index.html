@@ -50,7 +50,7 @@
     </header>
     <main>
       <section>
-        <h2>Категории каталога</h2>
+        <h2 class="visually-hidden">Категории каталога</h2>
         <div>
           <h3>Материалы</h3>
           <a href="catalog.html">На любой вкус</a>
@@ -271,5 +271,30 @@
         </p>
       </div>
     </footer>
+
+    <section>
+      <h2 class="hisually-hidden">Напишите нам</h2>
+      <form action="https://echo.htmlacademy.ru" method="post">
+        <p>
+          <label for="name">Ваше имя:</label>
+          <input id="name" type="text" name="name" placeholder="Имя Фамилия">
+        </p>
+        <p>
+          <label for="mail">Ваш e-mail:</label>
+          <input id="mail" type="text" name="mail" placeholder="email@example.com">
+        </p>
+        <p>
+          <label for="text">Текст письма:</label>
+          <textarea id="text" name="message" placeholder="В свободной форме">
+        </p>
+        <button type="submit">Оформить заказ</button>
+      </form>
+    </section>
+
+    <section>
+      <h2 class="visually-hidden">Как до нас добраться</h2>
+      <!-- Здесь будет карта -->
+      <button type="button">Закрыть</button>
+    </section>
   </body>
 </html>
