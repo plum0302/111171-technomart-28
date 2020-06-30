@@ -16,7 +16,6 @@
     --lightgreen: #8ED78F;
     --lightyellow: #FFD180;
     --success-green: #5FBB2D;
-    --warning-yellow: #FFBF47;
     --error-red: #BA2732;
     --lightergrey: #EAEAEA;
     --black: #000000;
@@ -24,6 +23,8 @@
     --lightmilky: #F3F7F9;
     --catalog-grey: #E5E5E5;
     --price-grey: #A9A9A9;
+    --beige: #F7F3EC;
+    --lightbeige: #F9F5F0;
 }
 
 /* Global */
@@ -162,6 +163,109 @@ img {
    opacity: 0.5; 
 }
 
+.button {
+    height: 38px;
+    background-color: var(--red);
+    font-size: 14px;
+    color: var(--white);
+    text-transform: uppercase;
+    text-align: center;
+}
+
+/* Main categories */
+
+.main-categories {
+    color: var(--white);    
+}
+
+.main-categories h3 {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 30px;
+}
+
+.materials,
+.delivery {
+    background-color: var(--yellow);
+}
+
+.tools {
+    background-color: var(--blue);
+}
+
+.equipment {
+    background-color: var(--pink);
+}
+
+.discounts {
+    background-color: var(--lightgreen);
+}
+
+.category-banner {
+    position: relative;
+}
+
+.banner-header {
+    background-color: rgba(0, 0, 0, 0.25);
+}
+
+.banner-header h3 {
+    font-size: 36px;
+    line-height: 36px;
+    font-weight: 700;
+}
+
+.banner-header span {
+    font-size: 18px;
+}
+
+/* Popular goods */
+
+.popular-heading {
+    background-color: var(--lightbeige);
+}
+
+.popular-heading h2 {
+    font-size: 30px;
+    line-height: 30px;
+    color: var(--darkgrey);
+    text-transform: uppercase;
+}
+
+/* Services */
+
+.services {
+    background-color: var(--light-background);
+}
+
+.services p {
+    font-family: "PT Sans", Arial, sans-serif;
+}
+
+.services-title,
+.service-name {
+    font-size: 30px;
+    line-height: 30px;
+}
+
+.service-option {
+    color: var(--white);
+    font-size: 21px;
+    line-height: 30px;
+    background-color: var(--darkgrey);
+    box-shadow: 0px 1px 0px var(--darkergrey), inset 0px 1px 0px #405069;
+}
+
+.services .selected {
+    background-color: var(--white);
+    color: var(--darkgrey);
+    box-shadow: 0px 1px 0px var(--white);
+}
+
+.service-name {
+    color: var(--darkgrey);
+}
+
 /* About */
 
 .about h2 {
@@ -176,15 +280,6 @@ img {
 
 .delivery-companies-list {
     font-size: 18px;
-}
-
-.button {
-    height: 38px;
-    background-color: var(--red);
-    font-size: 14px;
-    color: var(--white);
-    text-transform: uppercase;
-    text-align: center;
 }
 
 /* Footer */
@@ -259,6 +354,39 @@ img {
 
 .catalog-filter {
     font-family: "PT Sans", Arial, sans-serif;
+    text-transform: uppercase;
+}
+
+.catalog-filter span,
+.sorting {
+    background-color: var(--beige);
+}
+
+.price-toggle,
+.price-values input {
+    background-color: var(--beige);
+}
+
+.price-values input {
+    font-size: 17px;
+    line-height: 18px;
+}
+
+.sorting-item {
+    line-height: 17px;
+    opacity: 0.3;
+    border-bottom: 1px dotted var(--red);
+}
+
+.sorting-item:hover {
+    opacity: 1;
+    border-bottom: 1px solid var(--red); 
+}
+
+.sorting-item:active,
+.sorting .active {
+    color: var(--red);
+    border-bottom: none;
 }
 
 .catalog-filter fieldset {
@@ -341,4 +469,38 @@ img {
 
 .bookmark-button:active {
     opacity: 0.5;
+}
+
+.page-number,
+.page-next {
+    border: 1px solid var(--catalog-grey);
+    border-radius: 2px;
+}
+
+.page-number:hover,
+.page-next:hover {
+    border: 1px solid var(--lightgrey);
+}
+
+.page-number:active,
+.page-next:active {
+    border: 1px solid var(--red);
+}
+
+.paginator .active {
+    background-color: var(--red);
+    color: var(--white);
+}
+
+.catalog-category-about {
+    background-color: var(--light-background);
+}
+
+.catalog-category-about h2 {
+    font-size: 30px;
+    line-height: 30px;
+}
+
+.catalog-category-about p {
+    font-family: "PT Sans", Arial, sans-serif;
 }

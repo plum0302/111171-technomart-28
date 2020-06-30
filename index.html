@@ -4,8 +4,8 @@
     <meta charset="utf-8">
     <title>HTML Academy: Техномарт</title>
     <link href="https://fonts.googleapis.com/css2?family=Cuprum:ital,wght@0,400;0,700;1,400&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
-    <link href="/css/normalize.css" rel="stylesheet">
-    <link href="/css/style.css" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header>
@@ -52,83 +52,88 @@
       </div>
     </header>
     <main>
-      <section>
+      <section class="main-categories">
         <h2 class="visually-hidden">Категории каталога</h2>
-        <div>
+        <div class="main-category-item materials">
           <h3>Материалы</h3>
-          <a href="catalog.html">На любой вкус</a>
+          <a class="button" href="catalog.html">На любой вкус</a>
         </div>
-        <div>
+        <div class="main-category-item tools">
           <h3>Инструмент</h3>
-          <a href="catalog.html">На все случаи</a>
+          <a class="button" href="catalog.html">На все случаи</a>
         </div>
-        <div>
+        <div class="main-category-item equipment">
           <h3>Техника</h3>
-          <a href="catalog.html">На любой вкус</a>
+          <a class="button" href="catalog.html">На любой вкус</a>
         </div>
-        <div>
-          <h3>Перфораторы</h3>
-          <span>Настоящие мужские игрушки</span>
-          <a href="catalog.html">Открыть каталог</a>
+        <div class="category-banner">
+          <div class="banner-header">
+            <h3>Перфораторы</h3>
+            <span>Настоящие мужские игрушки</span>
+          </div>
+          <div class="banner-image">
+            <img src="img/banner.jpg" alt="bosch perforator banner">
+          </div>
+          <a class="button" href="catalog.html">Открыть каталог</a>
         </div>
-        <div>
+        <div class="main-category-item discounts">
           <h3>Скидки 50%</h3>
-          <a href="catalog.html">На 350 товаров</a>
+          <a class="button" href="catalog.html">На 350 товаров</a>
         </div>
-        <div>
+        <div class="main-category-item delivery">
           <h3>Доставка</h3>
-          <a href="blank.html">Бесплатно</a>
+          <a class="button" href="blank.html">Бесплатно</a>
         </div>
       </section>
-      <section>
-        <div>
+      <section class="popular-goods">
+        <div class="popular-heading">
           <h2>Популярные товары:</h2>
-          <a href="catalog.html">Все популярные товары</a>
+          <a class="button" href="catalog.html">Все популярные товары</a>
         </div>
         <ul>
-          <li>
+          <li class="catalog-item">
             <a href="blank.html">
                 <div>
                     <img src="/img/bfg9000.jpg" width="144" height="128" alt="Перфоратор BOSCH BFG 9000">
                 </div>
                 <h3>Перфоратор BOSCH BFG 9000</h3>
             </a>
-            <span>32500 Р.</span>
-            <span>25500 Р.</span>
+            <span class="old-price">32500 Р.</span>
+            <span class="price">25500 Р.</span>
           </li>
-          <li>
+          <li class="catalog-item">
             <a href="blank.html">
                 <div>
                     <img src="/img/bfg3000.jpg" width="144" height="128" alt="Перфоратор BOSCH BFG 3000">
                 </div>
                 <h3>Перфоратор BOSCH BFG 3000</h3>
             </a>
-            <span>22500 Р.</span>
-            <span>15500 Р.</span>
+            <span class="old-price">22500 Р.</span>
+            <span class="price">15500 Р.</span>
           </li>
-          <li>
+          <li class="catalog-item">
             <a href="blank.html">
                 <div>
                     <img src="/img/bfg6000.jpg" width="144" height="128" alt="Перфоратор BOSCH BFG 6000">
                 </div>
                 <h3>Перфоратор BOSCH BFG 6000</h3>
             </a>
-            <span>30500 Р.</span>
-            <span>25500 Р.</span>
+            <span class="old-price">30500 Р.</span>
+            <span class="price">25500 Р.</span>
           </li>
-          <li>
+          <li class="catalog-item">
             <a href="blank.html">
                 <div>
                     <img src="/img/bfg2000.jpg" alt="Перфоратор BOSCH BFG 2000">
                 </div>
                 <h3>Перфоратор BOSCH BFG 2000</h3>
             </a>
-            <span>12500 Р.</span>
+            <span class="price">12500 Р.</span>
           </li>
         </ul>
       </section>
-      <section>
-        <div>
+      <section class="popular-producers">
+        <div class="popular-heading">
           <h2>Популярные производители:</h2>
           <a href="catalog.html">Все производители</a>
         </div>
@@ -175,20 +180,20 @@
           </li>
         </ul>
       </section>
-      <section>
-        <h2>Сервисы</h2>
+      <section class="services">
+        <h2 class="services-title">Сервисы</h2>
         <p>
           Хороший интернет-магазин отличается от плохого не только ценами!<br>
           Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.
         </p>
         <div>
           <ul>
-            <li>Доставка</li>
-            <li>Гарантия</li>
-            <li>Кредит</li>
+            <li class="service-option selected">Доставка</li>
+            <li class="service-option">Гарантия</li>
+            <li class="service-option">Кредит</li>
           </ul>
           <div>
-            <h3>Доставка</h3>
+            <h3 class="service-name">Доставка</h3>
             <p>
               Мы с удовольствием доставим ваш товар прямо<br>к вашему подъезду совершенно бесплатно!<br>Ведь мы неплохо заработаем,<br>поднимая его на ваш этаж!
             </p>

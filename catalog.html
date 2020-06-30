@@ -71,9 +71,9 @@
                 <fieldset>
                     <legend>Цена:</legend>
                     <div>
-                      <label><input type="range" min="0" max="30000" value="10000">Шкала цен</label>
+                      <label class="price-toggle"><input type="range" min="0" max="30000" value="10000">Шкала цен</label>
                     </div>
-                    <div>
+                    <div class="price-values">
                        <label><input type="number" min="0" max="30000" value="0">Цена от</label>
                        <span>-</span>
                        <label><input type="number" min="0" max="30000" value="0">Цена до</label>
@@ -95,14 +95,14 @@
                 <button class="filter-button" type="submit">ПОКАЗАТЬ</button>
             </form>
         </div>
-        <div>
+        <div class="sorting">
             <span>Сортировка:</span>
             <ul>
-                <li><a href="blank.html">По цене</a></li>
-                <li><a href="blank.html">По типу</a></li>
-                <li><a href="blank.html">По функционалу</a></li>
-                <li><a href="blank.html">Мин</a></li>
-                <li><a href="blank.html">Макс</a></li>
+                <li><a class="sorting-item active" href="blank.html">По цене</a></li>
+                <li><a class="sorting-item" href="blank.html">По типу</a></li>
+                <li><a class="sorting-item" href="blank.html">По функционалу</a></li>
+                <li><a class="sorting-item-min" href="blank.html">Мин</a></li>
+                <li><a class="sorting-item-max" href="blank.html">Макс</a></li>
             </ul>
         </div>
         <div>
@@ -197,14 +197,14 @@
             </ul>
         </div>
         <div>
-            <ul>
-                <li><a>1</a></li>
-                <li><a href="#">2</a></li>
-                <li><a href="#">3</a></li>
-                <li><a href="#">Следующая</a></li>
+            <ul class="paginator">
+                <li class="page-number acvtive"><a>1</a></li>
+                <li class="page-number"><a href="#">2</a></li>
+                <li class="page-number"><a href="#">3</a></li>
+                <li class="page-next"><a href="#">Следующая</a></li>
             </ul>
         </div>
-        <article>
+        <article class="catalog-category-about">
             <h2>Пара слов о перфораторах</h2>
             <p>
                 Перфоратор - универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне.<br>
