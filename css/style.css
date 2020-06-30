@@ -21,7 +21,7 @@
     --lightergrey: #EAEAEA;
     --black: #000000;
     --milky: #F1F5F7;
-    --milky2: #F3F7F9;
+    --lightmilky: #F3F7F9;
     --catalog-grey: #E5E5E5;
     --price-grey: #A9A9A9;
 }
@@ -201,7 +201,7 @@ img {
 }
 
 .middle-footer p {
-    color: var(--milky2);
+    color: var(--lightmilky);
 }
 
 .categories-nav {
