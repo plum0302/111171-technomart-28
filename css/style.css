@@ -7,6 +7,7 @@
     --grey: #3D546F;
     --darkgrey: #32425C;
     --darkergrey: #293449;
+    --header-dark: #161D29;
     --lightgrey: #C5C5C5;
     --light-background: #F1F5F7;
     --white: #FFFFFF;
@@ -50,12 +51,34 @@ img {
     height: auto;
 }
 
+/* Grid */
+
+.page {
+    height: 100%;
+}
+
+.page-body {
+    min-height: 100%;
+    display: grid;
+    grid-template-rows: min-content 1fr min-content;
+    align-content: start;
+}
+
+/* Container */
+
+.container {
+    width: 940px;
+    margin: 0 auto;
+}
+
 /* Header */
 
-.uppper-header {
+.upper-header {
     font-size: 18px;
     color: var(--white);
     background-color: var(--darkergrey);
+    display: flex;
+    justify-content: center;
 }
 
 .header-logo,
@@ -83,15 +106,29 @@ img {
     color: rgba(255, 255, 255, 0.5);
 }
 
+.order-button:active,
+.bookmarks:active {
+    background-color: var(--header-dark);
+}
+
 .cart-filled {
     background-color: var(--red);
 }
 
 .main-header {
     background-color: var(--light-background);
+    margin-bottom: 40px;
+    margin-top: 0;
+    padding-top: 41px;
+    padding-bottom: 60px;
 }
 
-.main-header h1 {
+.main-header-section {
+    display: flex;
+    justify-content: space-between;
+}
+
+.site-title {
     color: var(--red);
     font-style: italic;
     font-size: 16px;
@@ -131,11 +168,26 @@ img {
 }
 
 .main-nav {
-    font-size: 18px;
-    color: var(--white);
+    font-size: 18px;    
     background-color: var(--darkgrey);
     border-bottom: 5px solid var(--darkergrey);
     list-style: none;
+    margin-bottom: 60px;
+    margin-top: 40px;
+}
+
+.main-nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    margin: 0;
+    padding: 0;
+    min-height: 60px;
+    align-items: center;
+}
+
+.main-nav-item a {
+    color: var(--white);
 }
 
 .profile-section {
@@ -266,6 +318,12 @@ img {
 
 /* About */
 
+.about {
+    display: flex;
+    margin-top: 70px;
+    margin-bottom: 70px;
+}
+
 .about h2 {
     font-size: 30px;
     line-height: 30px;
@@ -276,59 +334,129 @@ img {
     font-family: "PT Sans", Arial, sans-serif;
 }
 
+.about-company {
+    max-width: 478px;
+    margin-right: 161px;
+}
+
 .delivery-companies-list {
     font-size: 18px;
 }
 
+.about-contacts {
+    max-width: 300px;
+}
+
 /* Footer */
+
+.footer {
+    background-color: var(--darkgrey);
+}
 
 .upper-footer,
 .middle-footer {
-    background-color: var(--darkgrey);
     font-size: 18px;
 }
 
-.footer-nav {
-    color: var(--milky);
-    list-style: none;
+.upper-footer {
+    display: flex;
+    justify-content: space-between;
 }
 
-.middle-footer p {
+.footer-logo {
+    margin-right: 174px;
+    width: 220px;
+    height: 68px;
+}
+
+.footer-nav {    
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    width: 549px;
+    margin-top: 37px;
+    padding: 0;
+}
+
+.footer-nav a {
+    color: var(--milky);
+}
+
+.middle-footer {
+    display: flex;
+    padding-bottom: 54px;
+}
+
+.footer-contacts {
     color: var(--lightmilky);
+    margin-right: 92px;
 }
 
 .categories-nav {
-    color: var(--yellow);
     list-style: none;
+    display: flex;
+    justify-content: space-between;
+    width: 525px;
 }
 
-.footer-nav:hover,
-.categories-nav:hover {
+.categories-nav a {
+    color: var(--yellow);
+}
+
+.footer-nav a:hover,
+.categories-nav a:hover {
     text-decoration: underline;
 }
 
-.footer-nav:active,
-.categories-nav:active {
+.footer-nav a:active,
+.categories-nav a:active {
     opacity: 0.5;
 }
 
 .bottom-footer {
     font-size: 16px;
     background-color: var(--darkergrey);
+    padding-top: 36px;
+    padding-bottom: 34px;
 }
 
-.feedback-mail,
-.academy-address {
+.bottom-footer span {
+    color: var(--white);
+}
+
+.bottom-footer-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.social-networks {
+    display: flex;
+    list-style: none;
+    margin-left: 161px;
+    margin-right: 118px;
+}
+
+.footer-links {
+    display: flex;
+    width: 286px;
+}
+
+.feedback-mail {
+    margin-right: 51px;
+}
+
+.feedback-mail a,
+.academy-address a {
     color: var(--lightyellow);
 }
 
-.feedback-mail:hover,
-.academy-address:hover {
+.feedback-mail a:hover,
+.academy-address a:hover {
     text-decoration: underline;
 }
 
-.feedback-mail:active,
-.academy-address:active {
+.feedback-mail a:active,
+.academy-address a:active {
     color: var(--red);
 }
 
@@ -339,13 +467,30 @@ img {
     font-family: "PT Sans", Arial, sans-serif;
     line-height: 18px;
     text-transform: uppercase;
+    display: flex;
+    margin-top: 21px;
+    margin-bottom: 20px;
+}
+
+.bread-crumbs-item {
+    margin-right: 40px;
+}
+
+.bread-crumbs-item a {
+    color: var(--black);
 }
 
 .catalog-title {
     font-size: 30px;
     line-height: 30px;
     text-transform: uppercase;
+    color: var(--darkgrey);
+    font-weight: 400;
     background-color: var(--light-background);
+    padding-top: 29px;
+    padding-bottom: 30px;
+    padding-left: 29px;
+    margin-bottom: 20px;
 }
 
 /* Catalog filter */
@@ -353,6 +498,19 @@ img {
 .catalog-filter {
     font-family: "PT Sans", Arial, sans-serif;
     text-transform: uppercase;
+}
+
+.catalog {
+    display: flex;
+}
+
+.catalog-filter {
+    width: 220px;
+    margin-right: 21px;
+}
+
+.catalog-main-column {
+    flex-grow: 1;
 }
 
 .catalog-filter span,
@@ -387,15 +545,36 @@ img {
     border-bottom: none;
 }
 
+.filter-producers-list,
+.filter-power-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.filter-producers-list {
+    margin-top: 16px;
+    margin-bottom: 18px;
+}
+
+.filter-producers-list label,
+.filter-power-list label {
+    margin-top: 16px;
+    font-size: 15px;
+    line-height: 19px;
+}
+
+.filter-power-list {
+    margin-bottom: 35px;
+}
+
 .catalog-filter fieldset {
+    border: none;
+}
+
+.catalog-filter legend {
     font-size: 17px;
     line-height: 30px;
     font-weight: 700;
-}
-
-.catalog-filter label {
-    font-size: 15px;
-    line-height: 19px;
 }
 
 .filter-button {
@@ -403,6 +582,13 @@ img {
     border: 1px solid var(--catalog-grey);
     text-align: center;
 }
+
+.catalog-list {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
+    justify-content: space-between;
 }
 
 .catalog-item {
@@ -411,6 +597,9 @@ img {
     font-size: 17px;
     line-height: 18px;
     font-weight: 700;
+    width: 220px;
+    padding-top: 22px;
+    padding-bottom: 21px;
 }
 
 .catalog-item h3 {

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Техномарт</title>
@@ -7,7 +7,7 @@
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
-  <body>
+  <body class="page-body">
     <header>
       <div class="upper-header">
         <a class="header-logo">
@@ -29,16 +29,18 @@
         <a class="order-button" href="blank.html">Оформить заказ</a>
       </div>
       <div class="main-header">
-        <h1>Интернет-магазин строительных материалови инструментов для ремонта</h1>
-        <div>
-          <span class="phone">+7 (812) 555-05-55</span>
-          <span class="address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</span>
+        <div class="main-header-section container">
+          <h1 class="site-title">Интернет-магазин строительных материалов и инструментов для ремонта</h1>
+          <div>
+            <span class="phone">+7 (812) 555-05-55</span>
+            <span class="address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</span>
+          </div>
+          <div>
+            <button class="login-button">Войти</button>
+            <button class="signup-button">Регистрация</button>
+          </div>
         </div>
-        <div>
-          <button class="login-button">Войти</button>
-          <button class="signup-button">Регистрация</button>
-        </div>
-        <nav class="main-nav">
+        <nav class="main-nav container">
           <ul>
             <li class="main-nav-item"><a href="index.html">Главная</a></li>
             <li class="main-nav-item"><a href="blank.html">Компания</a></li>
@@ -94,7 +96,7 @@
           <li class="catalog-item">
             <a href="blank.html">
                 <div>
-                    <img src="/img/bfg9000.jpg" width="144" height="128" alt="Перфоратор BOSCH BFG 9000">
+                    <img src="img/bfg9000.jpg" width="144" height="128" alt="Перфоратор BOSCH BFG 9000">
                 </div>
                 <h3>Перфоратор BOSCH BFG 9000</h3>
             </a>
@@ -104,7 +106,7 @@
           <li class="catalog-item">
             <a href="blank.html">
                 <div>
-                    <img src="/img/bfg3000.jpg" width="144" height="128" alt="Перфоратор BOSCH BFG 3000">
+                    <img src="img/bfg3000.jpg" width="144" height="128" alt="Перфоратор BOSCH BFG 3000">
                 </div>
                 <h3>Перфоратор BOSCH BFG 3000</h3>
             </a>
@@ -114,7 +116,7 @@
           <li class="catalog-item">
             <a href="blank.html">
                 <div>
-                    <img src="/img/bfg6000.jpg" width="144" height="128" alt="Перфоратор BOSCH BFG 6000">
+                    <img src="img/bfg6000.jpg" width="144" height="128" alt="Перфоратор BOSCH BFG 6000">
                 </div>
                 <h3>Перфоратор BOSCH BFG 6000</h3>
             </a>
@@ -124,7 +126,7 @@
           <li class="catalog-item">
             <a href="blank.html">
                 <div>
-                    <img src="/img/bfg2000.jpg" alt="Перфоратор BOSCH BFG 2000">
+                    <img src="img/bfg2000.jpg" alt="Перфоратор BOSCH BFG 2000">
                 </div>
                 <h3>Перфоратор BOSCH BFG 2000</h3>
             </a>
@@ -140,42 +142,42 @@
         <ul>
           <li>
             <a href="blank.html">
-              <img src="/img/bosh.png" width="126" height="37" alt="BOSCH">
+              <img src="img/bosh.png" width="126" height="37" alt="BOSCH">
             </a>
           </li>
           <li>
             <a href="blank.html">
-              <img src="/img/makita.png" width="123" height="40" alt="Makita">
+              <img src="img/makita.png" width="123" height="40" alt="Makita">
             </a>
           </li>
           <li>
             <a href="blank.html">
-              <img src="/img/dewalt.png" width="146" height="44" alt="Dewalt">
+              <img src="img/dewalt.png" width="146" height="44" alt="Dewalt">
             </a>
           </li>
           <li>
             <a href="blank.html">
-              <img src="/img/interskol.png" width="200" height="88" alt="Интерскол">
+              <img src="img/interskol.png" width="200" height="88" alt="Интерскол">
             </a>
           </li>
           <li>
             <a href="blank.html">
-              <img src="/img/hitachi.png" width="169" height="31" alt="Hitachi">
+              <img src="img/hitachi.png" width="169" height="31" alt="Hitachi">
             </a>
           </li>
           <li>
             <a href="blank.html">
-              <img src="/img/lg.png" width="121" height="73" alt="LG">
+              <img src="img/lg.png" width="121" height="73" alt="LG">
             </a>
           </li>
           <li>
             <a href="blank.html">
-              <img src="/img/aeg.png" width="151" height="96" alt="AEG">
+              <img src="img/aeg.png" width="151" height="96" alt="AEG">
             </a>
           </li>
           <li>
             <a href="blank.html">
-              <img src="/img/metabo.png" width="204" height="69" alt="Metabo">
+              <img src="img/metabo.png" width="204" height="69" alt="Metabo">
             </a>
           </li>
         </ul>
@@ -200,8 +202,8 @@
           </div>
         </div>
       </section>
-      <section class="about">
-        <div>
+      <section class="about container">
+        <div class="about-company">
           <h2>КОМПАНИЯ «Техномарт»</h2>
           <p>
             Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит равнодушными любителей сэкономить на гастарбайтерах. 
@@ -216,18 +218,18 @@
           </ul>
           <a class="button" href="blank.html">Подробнее о компании</a>
         </div>
-        <div>
+        <div class="about-contacts">
           <h2>КОНТАКТЫ</h2>
           <p>
             Вы можете забрать товар сами,<br>заехав в наш офис:
           </p>
-          <img src="/img/map.png" width="300" height="158" alt="карта">
+          <img src="img/map.png" width="300" height="158" alt="карта">
           <a class="button" href="blank.html">Заблудились? Напишите нам!</a>
         </div>
       </section>
     </main>
-    <footer>
-      <div class="upper-footer">
+    <footer class="footer">
+      <div class="upper-footer container">
         <a class="footer-logo">
           <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid" width="138" height="23" viewBox="0 0 136.5 21.59">
             <defs>
@@ -252,31 +254,35 @@
           </ul>
         </div>
       </div>
-      <div class="middle-footer">
-        <p>
+      <div class="middle-footer container">
+        <p class="footer-contacts">
           <span>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</span>
           <span>+7 (812) 555-05-55</span>
         </p>
         <ul class="categories-nav">
-          <li>Материалы</li>
-          <li>Техника</li>
-          <li>Инструмент</li>
-          <li>Спецпредложения</li>
+          <li><a href="blank.html">Материалы</a></li>
+          <li><a href="blank.html">Техника</a></li>
+          <li><a href="blank.html">Инструмент</a></li>
+          <li><a href="blank.html">Спецпредложения</a></li>
         </ul>
       </div>
       <div class="bottom-footer">
-        <span>© 2010–2019 Компания «Техномарт»<br>Все права защищены</span>
-        <ul>
-          <li><a href="https://vk.com/htmlacademy">Vkontakte</a></li>
-          <li><a href="https://www.facebook.com/htmlacademy">Facebook</a></li>
-          <li><a href="https://www.instagram.com/htmlacademy/">Instagram</a></li>
-        </ul>
-        <p>
-          Обратная связь:<a class="feedback-mail" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</span>
-        </p>
-        <p>
-          Разработано —<a class="academy-address" href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</span>
-        </p>
+        <div class="container bottom-footer-wrapper">
+          <span>© 2010–2019 Компания «Техномарт»<br>Все права защищены</span>
+          <ul class="social-networks">
+            <li><a href="https://vk.com/htmlacademy">Vkontakte</a></li>
+            <li><a href="https://www.facebook.com/htmlacademy">Facebook</a></li>
+            <li><a href="https://www.instagram.com/htmlacademy/">Instagram</a></li>
+          </ul>
+          <div class="footer-links">
+            <p class="feedback-mail">
+              <span>Обратная связь:</span>
+              <a  href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a></p>
+            <p class="academy-address">
+              <span>Разработано —</span>
+              <a  href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a></p>
+          </div>
+        </div>
       </div>
     </footer>
 
