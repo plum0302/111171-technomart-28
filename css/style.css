@@ -234,12 +234,20 @@ img {
 /* Main categories */
 
 .main-categories {
-    color: var(--white);    
+    color: var(--white);
+    margin-bottom: 59px;
 }
 
 .main-categories h3 {
     font-size: 24px;
     line-height: 30px;
+}
+
+.categories-wrapper {
+    display: grid;
+    grid-template-columns: 300px 300px 300px;
+    grid-template-rows: 123px 123px 123px;
+    grid-gap: 20px;
 }
 
 .materials,
@@ -261,10 +269,15 @@ img {
 
 .category-banner {
     position: relative;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 4;
 }
 
 .banner-header {
     background-color: rgba(0, 0, 0, 0.25);
+    position: absolute;
 }
 
 .banner-header h3 {
@@ -276,10 +289,20 @@ img {
     font-size: 18px;
 }
 
+.category-banner .button {
+    position: absolute;
+}
+
 /* Popular goods */
 
 .popular-heading {
     background-color: var(--lightbeige);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 25px;
+    padding-bottom: 26px;
+    margin-bottom: 20px;
 }
 
 .popular-heading h2 {
@@ -287,16 +310,50 @@ img {
     line-height: 30px;
     color: var(--darkgrey);
     text-transform: uppercase;
+    font-weight: 400;
+    margin: 0;
+    margin-left: 28px;
+}
+
+.popular-heading .button {
+    margin-right: 14px;
+}
+
+.popular-goods {
+    margin-bottom: 70px;
+}
+
+/* Popular producers */
+
+.popular-producers-list,
+.catalog-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.producer {
+    width: 220px;
+    border: 1px solid var(--catalog-grey);
+    margin-bottom: 20px;
 }
 
 /* Services */
 
 .services {
     background-color: var(--light-background);
+    padding-top: 64px;
+    padding-bottom: 99px;
 }
 
 .services p {
     font-family: "PT Sans", Arial, sans-serif;
+    margin-bottom: 67px;
+}
+
+.services-title {
+    font-weight: 400;
+    margin: 0;
 }
 
 .services-title,
@@ -305,10 +362,22 @@ img {
     line-height: 30px;
 }
 
+.services-section {
+    display: flex;
+}
+
+.services-list {
+    width: 240px;
+}
+
 .service-option {
     color: var(--white);
     font-size: 21px;
     line-height: 30px;
+    width: 100%;
+    padding-top: 13px;
+    padding-bottom: 17px;
+    padding-left: 22px;
     background-color: var(--darkgrey);
     box-shadow: 0px 1px 0px var(--darkergrey), inset 0px 1px 0px #405069;
 }
@@ -319,8 +388,14 @@ img {
     box-shadow: 0px 1px 0px var(--white);
 }
 
+.service-about {
+    margin-left: 80px;
+}
+
 .service-name {
     color: var(--darkgrey);
+    margin: 0;
+    font-weight: 400;
 }
 
 /* About */
@@ -335,6 +410,7 @@ img {
     font-size: 30px;
     line-height: 30px;
     text-transform: uppercase;
+    font-weight: 400;
 }
 
 .about p {
@@ -502,6 +578,14 @@ img {
     text-transform: uppercase;
 }
 
+.filter-price,
+.filter-producers-list,
+.filter-power-list {
+    border: none;
+    border-bottom: 1px solid var(--catalog-grey);
+    padding: 0;
+}
+
 .catalog {
     display: flex;
 }
@@ -515,9 +599,35 @@ img {
     flex-grow: 1;
 }
 
-.catalog-filter span,
+.catalog-filter-name,
 .sorting {
     background-color: var(--beige);
+}
+
+.catalog-filter-name {
+    display: block;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 18px;
+}
+
+.filter-price {
+    margin-top: 14px;
+    padding-bottom: 25px;
+}
+
+.filter-price legend {
+    margin-bottom: 11px;
+}
+
+.price-values {
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+}
+
+.price-toggle {
+    margin-bottom: 9px;
 }
 
 .price-toggle,
@@ -528,6 +638,27 @@ img {
 .price-values input {
     font-size: 17px;
     line-height: 18px;
+    width: 95px;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: none;
+}
+
+.sorting {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10px;
+    padding-right: 14px;
+    padding-bottom: 10px;
+    padding-left: 19px;
+    margin-bottom: 28px;
+}
+
+.sorting-list {
+    min-width: 443px;
+    display: flex;
+    justify-content: space-between;
 }
 
 .sorting-item {
@@ -556,6 +687,7 @@ img {
 .filter-producers-list {
     margin-top: 16px;
     margin-bottom: 18px;
+    padding-bottom: 26px;
 }
 
 .filter-producers-list label,
@@ -567,10 +699,7 @@ img {
 
 .filter-power-list {
     margin-bottom: 35px;
-}
-
-.catalog-filter fieldset {
-    border: none;
+    border-bottom: 0;
 }
 
 .catalog-filter legend {
@@ -583,12 +712,6 @@ img {
     line-height: 18px;
     border: 1px solid var(--catalog-grey);
     text-align: center;
-}
-
-.catalog-list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
 }
 
 .catalog-item {
@@ -658,10 +781,30 @@ img {
     opacity: 0.5;
 }
 
+.paginator {
+    display: flex;
+    margin-top: 48px;
+    margin-bottom: 59px;
+}
+
+.page-number {
+    margin-right: 10px;
+    min-width: 38px;
+    min-height: 38px;
+}
+
+.page-next {
+    min-width: 140px;
+    min-height: 38px;
+}
+
 .page-number,
 .page-next {
     border: 1px solid var(--catalog-grey);
     border-radius: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .page-number:hover,
@@ -681,13 +824,19 @@ img {
 
 .catalog-category-about {
     background-color: var(--light-background);
+    padding-top: 64px;
+    padding-bottom: 67px;
 }
 
 .catalog-category-about h2 {
     font-size: 30px;
     line-height: 30px;
+    font-weight: 400;
+    margin-top: 0;
+    margin-bottom: 25px;
 }
 
 .catalog-category-about p {
     font-family: "PT Sans", Arial, sans-serif;
+    margin: 0;
 }
